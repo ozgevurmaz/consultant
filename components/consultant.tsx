@@ -100,6 +100,28 @@ const ConsultantWebsite: FC = () => {
         </div>
       </section>
 
+      {/* Testimonial Section */}
+      <section className="py-20 px-6 bg-white/70 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Clients</h2>
+          <div className="grid md:grid-cols-2 gap-10">
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.05 }}
+                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all p-6 flex items-center gap-4"
+              >
+                <Image src={testimonial.image} alt={testimonial.author} width={80} height={80} className="rounded-full" />
+                <div>
+                  <p className="text-gray-700 italic">&quot;{testimonial.quote}&quot;</p>
+                  <p className="text-sm font-semibold mt-2">- {testimonial.author}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Blog Section */}
       <section id="blog" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
@@ -127,27 +149,6 @@ const ConsultantWebsite: FC = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section className="py-20 px-6 bg-white/70 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Clients</h2>
-          <div className="grid md:grid-cols-2 gap-10">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all p-6 flex items-center gap-4"
-              >
-                <Image src={testimonial.image} alt={testimonial.author} width={80} height={80} className="rounded-full" />
-                <div>
-                  <p className="text-gray-700 italic">"{testimonial.quote}"</p>
-                  <p className="text-sm font-semibold mt-2">- {testimonial.author}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6  backdrop-blur-md">
