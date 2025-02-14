@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 AI Consultant Website
 
-## Getting Started
+Welcome to the **AI Consultant Website**, a modern and interactive web platform designed for AI consulting services. This website provides an engaging user experience with **Framer Motion animations, Next.js optimizations, and Tailwind CSS styling**.
 
-First, run the development server:
+🔗 **Live Demo:** [Consultant Website](https://consultant-sigma.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📌 Features
+✅ **AI Services Overview** – Showcasing AI strategy consulting and personal coaching.  
+✅ **Testimonials** – Real user feedback displayed with interactive UI components.  
+✅ **Latest Blog Posts** – Highlights trending AI-related articles.  
+✅ **Contact Form** – Users can get in touch easily.  
+✅ **Fully Responsive Design** – Mobile-first and optimized for all devices.  
+
+---
+
+## 🛠 Tech Stack
+- **Next.js** – Server-side rendering & performance optimizations  
+- **React & TypeScript** – Component-based development  
+- **Tailwind CSS** – Styling & responsiveness  
+- **Framer Motion** – Smooth animations  
+- **Vercel** – Deployment  
+
+---
+
+## 🚀 Getting Started
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/ai-consultant.git
+cd ai-consultant
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install Dependencies
+```sh
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3️⃣ Run the Development Server
+```sh
+npm run dev
+```
+Project will be available at **http://localhost:3000** 🚀  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎨 Folder Structure
+```
+/consultant
+ ├── /components      # Reusable UI components
+ ├── /public          # Static assets
+ ├── /pages           # Next.js routing
+ ├── /styles          # Tailwind CSS styles
+ ├── /app             # App router structure
+ ├── /.next           # Build output
+ ├── next.config.js   # Next.js configurations
+ ├── tailwind.config.js # Tailwind settings
+ ├── package.json     # Dependencies & scripts
+ └── README.md        # Project documentation
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Deployment
+This project is **deployed on Vercel**.  
+To deploy manually:
+```sh
+vercel
+```
+or push to a **GitHub repo linked with Vercel** for automatic deployment.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
